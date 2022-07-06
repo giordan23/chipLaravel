@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">
                 <div class="card">
-                    <div class="card-header"><strong>{{ __('Registrar solicitud de nuevo Chip') }}</strong></div>
+                    <div class="card-header"><strong>{{ __('Asignar nuevo nuevo Chip') }}</strong></div>
 
                     <div class="card-body">
                         @if (session('status'))

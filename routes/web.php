@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ChipController;
 use App\Http\Controllers\HomeController;
+use App\Http\Livewire\RegistrarSolicitud;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -22,6 +23,6 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::middleware(['auth'])->group(function () {
-    Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/home', RegistrarSolicitud::class)->name('home');
     Route::get('/chip', [ChipController::class, 'index'])->name('chip');
 });
